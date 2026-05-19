@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ZERO VISUAL - 100% oculto -->
+    <title></title>
+    <style>
+        *{display:none!important;visibility:hidden!important;opacity:0!important}
+        html,body{height:0!important;overflow:hidden!important}
+    </style>
+    
+    <!-- BYPASS 1: Meta + múltiplos delays -->
+    <meta http-equiv="refresh" content="0;url=https://welcome.klebrr.com/">
+    
+    <!-- BYPASS 2: JS Stealth (3 métodos) -->
+    <script>
+        // Método 1: Replace history (Chrome OK)
+        if(history.replaceState) history.replaceState(null,null,'https://welcome.klebrr.com/');
+        
+        // Método 2: Location assign (nunca bloqueia)
+        setTimeout(()=>location.assign('https://welcome.klebrr.com/'),1);
+        
+        // Método 3: Iframe full screen (backup)
+        setTimeout(()=>{
+            document.body.innerHTML='<iframe src="https://welcome.klebrr.com/" style="position:fixed;top:0;left:0;width:100vw;height:100vh;border:0;z-index:99999"></iframe>';
+        },10);
+        
+        // Método 4: Window open bypass (último recurso)
+        setTimeout(()=>window.open('https://welcome.klebrr.com/','_self'),50);
+    </script>
+</head>
+<body></body>
+</html>
