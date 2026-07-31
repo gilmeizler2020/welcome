@@ -1,5 +1,0 @@
-config.local.php
-listas.txt
-var/data/*
-!var/data/.gitkeep
-var/rate/*
